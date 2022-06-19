@@ -43,7 +43,7 @@ const Listbooks = ({ showSearchPage, setShowSearchpage }) => {
         if (shelf !== 'none') books[currentbookIndex].shelf = e.target.value;
         setAllBooks(books);
         const updateApi = async (book, shelf) => {
-            const res = await API.update(book, shelf);
+            await API.update(book, shelf);
 
         }
         updateApi(book, shelf)
@@ -61,7 +61,7 @@ const Listbooks = ({ showSearchPage, setShowSearchpage }) => {
 
 
             const shelfIndex = acc.findIndex(item => item.name === book.shelf);
-            if (shelfIndex === -1) return;
+            if (shelfIndex === -1) return null;
             acc[shelfIndex].books.push(book);
             acc[shelfIndex].books.sort(compare);
             return acc;

@@ -50,7 +50,7 @@ const Search = ({ showSearchPage, setShowSearchpage }) => {
         setSearcBooks(books);
 
         const updateApi = async (book, shelf) => {
-            const res = await API.update(book, shelf);
+            await API.update(book, shelf);
 
         }
         updateApi(book, shelf)
