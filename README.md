@@ -24,7 +24,7 @@ OR (if you have yarn)
 yarn install
 ```
 
-### launching the project
+### Launching the project
 
 ```
 npm start
