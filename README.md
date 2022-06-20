@@ -24,7 +24,7 @@ OR (if you have yarn)
 yarn install
 ```
 
-## What app use
+## Dependencies Version
 
 ```
 React JS ^17.0.2
