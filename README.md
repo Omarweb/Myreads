@@ -1,6 +1,6 @@
 # MyReads Project
 
-bookshelf app to manage your reading list and select book you want to read , the books you currently reading and books you have read
+bookshelf app to manage your reading list and select books you want to read ,  books you currently reading and books you have read
 
 ## Requirements and How to install
 
