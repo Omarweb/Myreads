@@ -2,7 +2,7 @@
 
 bookshelf app to manage your reading list and select book you want to read , the books you currently reading and books you have read
 
-## Requirements you need to install
+## Requirements and How to install
 
 things you need to install the appliction and how to install them
 
