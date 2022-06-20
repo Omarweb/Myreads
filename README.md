@@ -1,2 +1,8 @@
 # Myreads
- Project for udacity
+Project for udacity
+
+Install:
+```sh
+npm install
+```
+			
