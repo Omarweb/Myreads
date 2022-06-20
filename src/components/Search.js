@@ -8,6 +8,7 @@ const Search = ({ showSearchPage, setShowSearchpage }) => {
     const [searchBooks, setSearcBooks] = useState([]);
 
     const updatQuery = (e) => {
+
         if (e.target.value.length === 0 || e.target.value.trim() === '') {
             setQuery('');
             setSearcBooks([]);
@@ -19,23 +20,28 @@ const Search = ({ showSearchPage, setShowSearchpage }) => {
     }
 
     useEffect(() => {
-        const search = async (query) => {
-            if (query.trim() === '') return;
-            const res = await API.search(query, 20);
-            if (res.error) {
-                setSearcBooks([]);
-                return;
+        const userEndTyping = setTimeout(() => {
+
+            const search = async (query) => {
+                if (query.trim() === '') return;
+                const res = await API.search(query, 20);
+                if (res.error) {
+                    setSearcBooks([]);
+                    return;
+                }
+                const books = await Promise.all(res.map(async (book) => {
+                    const data = await API.get(book.id);
+
+                    return data;
+                }));
+                setSearcBooks(books);
+
             }
-            const books = await Promise.all(res.map(async (book) => {
-                const data = await API.get(book.id);
+            search(query);
 
-                return data;
-            }));
-            setSearcBooks(books);
 
-        }
-        search(query);
-
+        }, 500);
+        return () => clearTimeout(userEndTyping)
     }, [query])
 
 
