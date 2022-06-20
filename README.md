@@ -4,8 +4,7 @@ bookshelf app to manage your reading list and select book you want to read , the
 
 ## Requirements you need to install
 
-
-What things you need to install the software and how to install them
+things you need to install the appliction and how to install them
 
 * **Node.js** [Node.js](https://nodejs.org/en/)
 
