@@ -2,17 +2,12 @@
 
 bookshelf app to manage your reading list and select book you want to read , the books you currently reading and books you have read
 
-## requirements you need to install
+## Requirements you need to install
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
 
 What things you need to install the software and how to install them
 
-```
-[Node.js](https://nodejs.org/en/)
-```
+* **Node.js** [Node.js](https://nodejs.org/en/)
 
 ### Installing
 
