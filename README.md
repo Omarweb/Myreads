@@ -24,6 +24,18 @@ OR (if you have yarn)
 yarn install
 ```
 
+### launching the project
+
+```
+npm start
+```
+
+OR (if you have yarn)
+
+```
+yarn start
+```
+
 ## Dependencies Version
 
 ```
